@@ -18,8 +18,8 @@ env:
   DOCKER_HUB_USERNAME: awab228
   # AWS & Elastic Bean Stalk
   AWS_REGION: us-east-1
-  EB_ENVIRONMENT_NAME: Springboot-env
-  EB_APPLICATION_NAME: springboot
+  EB_ENVIRONMENT_NAME: springboot-react-env
+  EB_APPLICATION_NAME: springboot-react
   EB_DEPLOYMENT_PACKAGE: elasticbeanstalk/docker-compose.yml
 
 jobs:
@@ -110,7 +110,7 @@ jobs:
         with:
           status: ${{ job.status }}
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
-          text: ':tada: :arrow_right: http://Springboot-env.eba-fdm4rww6.us-east-1.elasticbeanstalk.com'
+          text: ':tada: :arrow_right: http://springboot-react-env.eba-4e6n4xwa.us-east-1.elasticbeanstalk.com'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         if: always()
