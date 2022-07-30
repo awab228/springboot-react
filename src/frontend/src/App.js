@@ -11,7 +11,7 @@ import {
     Badge,
     Avatar,
     Radio,
-    Popconfirm,Empty
+    Popconfirm,Empty,Image
    } from 'antd';
 import {
     DesktopOutlined,
@@ -221,7 +221,12 @@ function App() {
                     {renderStudents()}
                 </div>
             </Content>
-            <Footer style={{ textAlign: 'center' }}>By SGX</Footer>
+            <Footer style={{ textAlign: 'center' }}>
+            By<br/>
+            <Image width ={70}
+            src ="https://user-images.githubusercontent.com/2607516/181872025-4a4871cd-1157-4f60-ad06-bca11b5b48f4.png"
+            />
+            </Footer>
         </Layout>
     </Layout>
 }
