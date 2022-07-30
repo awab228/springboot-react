@@ -36,4 +36,10 @@ public class Student {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private Gender gender;
+
+    public Student(String awab, String email, Gender female) {
+        this.name = name;
+        this.email = email;
+        this.gender = gender;
+    }
 }
