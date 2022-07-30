@@ -63,7 +63,7 @@ public class StudentIT {
         resultActions.andExpect(status().isOk());
         List<Student> students = studentRepository.findAll();
         assertThat(students)
-                .usingElementComparatorIgnoringFields("id")
+                .usingRecursiveFieldByFieldElementComparatorIgnoringFields("id")
                 .contains(student);
     }
 }
