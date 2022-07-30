@@ -25,7 +25,7 @@ class StudentRepositoryTest {
         Student student = new Student(
                 "Awab",
                 email,
-                Gender.FEMALE
+                Gender.MALE
         );
         underTest.save(student);
 

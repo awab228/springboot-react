@@ -37,7 +37,7 @@ public class Student {
     @Column(nullable = false)
     private Gender gender;
 
-    public Student(String awab, String email, Gender female) {
+    public Student(String name, String email, Gender gender) {
         this.name = name;
         this.email = email;
         this.gender = gender;
